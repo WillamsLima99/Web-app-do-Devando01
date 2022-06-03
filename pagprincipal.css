@@ -1,0 +1,157 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(to right, blue, cyan);
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+}
+.container1{
+    display: grid;
+    grid-template-columns: 0.1fr 2fr;
+}
+header{ /*Lugar onde aparecerá o título*/
+    height: 100px;
+    width: 100%;
+    background-color: rgb(53, 53, 53);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-bottom: 3px solid rgb(86, 238, 39);
+    box-shadow: 0 0 80px cyan, ;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+#titulo{
+    width: 32%;
+    text-align: center;
+    margin-left: 40%;
+}
+nav{ /* Barra de navegaçaõ lateral */
+    height: 100%;
+    width: 18%;
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-right: 2px solid rgb(89, 235, 31);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+nav:hover{ /*Efeito da barra de navegção*/
+    width: 45%;
+    transition: 0.7s;
+
+}
+nav{
+    transition: width 0.7s;
+}
+nav:hover .text-menu{
+    display: inline-block;
+    color: rgb(53, 53, 53);
+
+
+}
+li:hover{
+    background-color: rgb(86, 238, 39);
+    margin-left: -41px;
+    transition: 0.3s;
+    text-indent: 20px;
+
+}
+li:hover .text-menu{
+    color: white;
+
+}
+nav::after{
+    width: 100px;
+    transition: 2s;
+}
+.text-menu{ /* Texto que aparecerá acompanhado do ícone no menu de navegações*/
+    display: none;
+    color: rgb(53, 53, 53);
+
+}
+#amburguer:active nav{
+    width: 250px;
+    transition: 1.9s;
+}
+
+main{ /* Conteúdo principal do site, onde aparecerá as inputs para adicionar os dados dos agendamentos*/
+    height: 1000px;
+    width: 100%;
+    background-attachment: fixed;
+    background-image: linear-gradient(50deg, blue, rgb(54, 181, 184));
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+footer{ /*Essa tag ainda não existe na codificação do arquivo html da página principal*/
+    height: 300px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+ul{
+    list-style: none;
+    margin-top: -75px;
+}
+
+li{
+    margin-left: -20px;
+    margin-top: 100px;
+    padding-top: 20px;
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 19px;
+}
+
+fieldset{ /*Conjunto de inputs */
+    border: none;
+    margin-left: 30%;
+    width: 10%;
+    height: 60%;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 100px;
+
+}
+legend{
+    font-size: 25px;
+    position: relative;
+    color: rgb(53, 53, 53);
+    
+}
+label{
+    display: block;
+    font-size: 15px;
+    color: rgb(53, 53, 53);
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+.inputs{
+    font-size: 120%;
+    color: darkcyan;
+    border: none;
+    border-radius: 4px;
+    box-shadow: -1px 3px 2px 1px rgba(0, 34, 54, 0.356);
+    margin: 10px;
+
+}
+#submit{
+    background-color: rgb(0, 81, 128);
+    color: white;
+    margin: 20px;
+
+}
+.icone-menu{
+    width: 40px;
+    height: auto;
+    padding: -700px;
+}
